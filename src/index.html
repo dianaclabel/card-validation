@@ -22,18 +22,18 @@
       <div></div>
       <div class="container-pay">
         <p>¿Como quieres pagar?</p>
-        <form >
-          <label for="card-number">
+        <form id="card-form">
+          <label for="input-card-number">
             Numero de Tarjeta
-            <input type="text" id="card-number">
+            <input type="text"  id="input-card-number" name="card-number">
           </label>
-          <label for="name-lastname">
+          <label for="input-name-lastname">
             Nombre y Apellido
-            <input type="text" >
+            <input type="text" id="input-name-lastname" name="name-lastname">
           </label>
-          <label for="expiration-date">
+          <label for="input-expiration-date">
             Fecha de Expiracion
-            <input type="text" >
+            <input type="text" id="input-expiration-date" name="expiration-date">
           </label>
           <button type="submit" id="btn-comprar">Comprar</button>
         </form>
