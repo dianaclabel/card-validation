@@ -9,9 +9,10 @@ const formBtn = document.querySelector("#form-btn");
 cardNumberInput.addEventListener("change", () => {
   const cardNumbersString = cardNumberInput.value;
   console.log(cardNumbersString);
+  validator.isValid(cardNumbersString);
 
-  const arrString = cardNumbersString.split("");
-  stringToNumber(arrString);
+  // const arrString = cardNumbersString.split("");
+  // stringToNumber(arrString);
 });
 
 // formBtn.addEventListener("click", (event) => {
@@ -22,16 +23,17 @@ cardNumberInput.addEventListener("change", () => {
 //   stringToNumber(arrString);
 // });
 
-function stringToNumber(arrString) {
-  let cardNumbers = []; //numeros tipo numero
+// function stringToNumber(cardNumbersString) {
+//   const arrString = cardNumbersString.split("");
+//   let cardNumbers = []; //numeros tipo numero
 
-  arrString.forEach((element) => {
-    let number = parseInt(element);
-    // console.log(number);
-    cardNumbers.push(number);
-  });
+//   arrString.forEach((element) => {
+//     let number = parseInt(element);
+//     // console.log(number);
+//     cardNumbers.push(number);
+//   });
 
-  validator.isValid(cardNumbers);
-}
+//   validator.isValid(cardNumbers);
+// }
 
 // console.log(cardNumbers);
