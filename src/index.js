@@ -2,9 +2,9 @@ import validator from "./validator.js";
 
 console.log(validator);
 
-const cardForm = document.querySelector("#card-form");
+// const cardForm = document.querySelector("#card-form");
 const cardNumberInput = document.querySelector("#input-card-number");
-const formBtn = document.querySelector("#form-btn");
+// const formBtn = document.querySelector("#form-btn");
 
 cardNumberInput.addEventListener("change", () => {
   const cardNumbersString = cardNumberInput.value;
