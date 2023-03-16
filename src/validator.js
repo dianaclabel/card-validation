@@ -11,36 +11,38 @@ const validator = {
     function stringToNumber(cardNumbersString) {
       const arrString = cardNumbersString.split("");
       arrString.forEach((element) => {
-        let number = parseInt(element);
+        const number = parseInt(element);
         // console.log(number);
         cardNumbers.push(number);
       });
+      cardNumbers.reverse();
+      console.log(cardNumbers);
     }
 
     for (let i = 0; i <= cardNumbers.length - 1; i++) {
       if (i % 2 === 0) {
-        let resultVerification;
-        let result = cardNumbers[i] * 2;
+        totalPar += cardNumbers[i];
+        total += cardNumbers[i];
+      } else {
+        // let resultVerification;
+        const result = cardNumbers[i] * 2;
 
-        let numberTostring = result.toString();
-        resultVerification = numberTostring.split("");
+        const numberTostring = result.toString();
+        const resultVerification = numberTostring.split("");
 
         if (resultVerification.length === 2) {
           for (const number of resultVerification) {
-            let stringToNumber = parseInt(number);
-            totalPar += stringToNumber;
+            const stringToNumber = parseInt(number);
+            totalImpar += stringToNumber;
             total += stringToNumber;
           }
         } else {
-          let stringToNumber = parseInt(resultVerification[0]);
-          totalPar += stringToNumber;
+          const stringToNumber = parseInt(resultVerification[0]);
+          totalImpar += stringToNumber;
           total += stringToNumber;
         }
 
         console.log(resultVerification);
-      } else {
-        totalImpar += cardNumbers[i];
-        total += cardNumbers[i];
       }
     }
 
@@ -55,6 +57,7 @@ const validator = {
     }
 
     console.log(isValid);
+    return isValid;
   },
   maskify: () => {},
 };
