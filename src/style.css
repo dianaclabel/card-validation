@@ -8,6 +8,8 @@
   --color-primary: #ecf2e6;
   --color-primary-action: #68904e;
   --color-secondary: #b3b09e;
+  --font-Secondary: "Playfair Display SC", serif;
+  --font-primary: "Noto Sans", sans-serif;
 }
 
 .navigator {
@@ -52,15 +54,41 @@
 }
 
 .main-img {
-  width: 50vw;
+  width: 65vw;
 }
 
 .imagen-home {
   width: 100%;
+  opacity: 0.8;
   /* background-size: cover; */
 }
 
 .main-information {
-  background-color: #ecf2e6;
-  width: 50vw;
+  /* background-color: #ecf2e6; */
+  width: 35vw;
+  padding: 20px;
+  text-align: center;
+}
+.info-primary {
+  font-family: var(--font-Secondary);
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.info-action {
+  color: var(--color-primary-action);
+}
+
+.info-secondary {
+  font-family: var(--font-primary);
+  font-size: 24px;
+}
+
+.btn {
+  border-radius: 15px;
+  background-color: var(--color-primary-action);
+  color: white;
+  border-style: none;
+  width: 300px;
+  height: 50px;
 }
