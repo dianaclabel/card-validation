@@ -1,0 +1,72 @@
+.pay-media-container {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-primary);
+  width: 80%;
+  height: 15vh;
+  border-radius: 10px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.card-img-container {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.card-credit-img {
+  top: 12px;
+  left: 12px;
+  position: absolute;
+  width: 70%;
+}
+
+.info-media-pay {
+  font-family: var(--font-primary);
+  margin: 30px;
+  font-size: 20px;
+  color: rgb(118 116 116);
+}
+.pay-container {
+  width: 80%;
+  background-color: var(--color-primary);
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.credit-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  width: 400px;
+  height: 250px;
+}
+
+.chip-container {
+  width: 70px;
+}
+.img-chip,
+.img-type-card {
+  width: 100%;
+}
+.card-credit-number {
+  font-size: 30px;
+}
+.info-usuario {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.card-type {
+  width: 70px;
+  margin-left: auto;
+}
+.card-form {
+  width: 50%;
+  height: 100%;
+}

@@ -2,47 +2,84 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    
+    <title>El botanico</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pay.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Noto+Sans:wght@500;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div>
-        <img src="/" alt="/">
+    <header class="navigator">
+      <div class="navigator-left">
+          <div class="container-logo">
+              <img class="logotipo" src="/src/assets/logo.png" alt="plantas y macetas">
+          </div>
+          <div class="navigator__search">
+              <input class="search" placeholder="buscar" type="text">
+              <span class="icon-search"><img  class="img-search"src="/src/assets/search.png" alt=""></span>
+          </div>
+          
+         
       </div>
-      
-      <input type="text">
-      <ul>
-        <li >Home</li>
-        <li>Store</li>
-        <li>About</li>
-        <li>contact</li>
-        <li><img src="/" alt=""></li>
-      </ul>
+      <nav class="navigator-right"> 
+          <ul class="navigator-items">
+              <li class="nav-item"><a class="item" href="/">Home </a>
+                  
+              </li>
+              <li class="nav-item"><a class="item" href="/">Tienda</a>
+                  </li>
+              <li class="nav-item"><a class="item" href="/">Nosotros </a>
+                  
+              </li>
+              <li class="nav-item"><a class="item" href="/">Contacto</a>
+                  </li>
+              <li class="nav-item item-perfil">
+                  <a href="/" class="item"> Perfil</a>
+              
+                  <img  class="icon-arrow-down" src="/src/assets/arrow-down.png" alt="arrow-down">
+              </li>
+              <li class="nav-item"><a href="/" class="item"><img src="/src/assets/cart.png" alt="carrito"></a></li>
+          </ul>
+      </nav>
     </header>
     <main>
-      <div></div>
-      <div></div>
-      <div class="container-pay">
-        <p>¿Como quieres pagar?</p>
-        <form id="card-form">
-          <label for="input-card-number">
-            Numero de Tarjeta
-            <input type="text"  id="input-card-number" name="card-number" pattern="[0-9]">
-          </label>
-          <br>
-          <label for="input-name-lastname">
-            Nombre y Apellido
-            <input type="text" id="input-name-lastname" name="name-lastname">
-          </label>
-          <br>
-          <label for="input-expiration-date">
-            Fecha de Expiracion
-            <input type="text" id="input-expiration-date" name="expiration-date">
-          </label>
-          <br>
-          <button type="submit" id="form-btn">Comprar</button>
-        </form>
+      <div class="pay-media-container">
+        <div class="card-img-container">
+          <img class=" card-credit-img" src="/src/assets/card-credit.png" alt="/">
+        </div>
+        <p class="info-media-pay"> Pago con tarjete de crédito</p>
+      </div>
+      <div class="pay-container">
+        <div class="pay-form">
+          <form id="card-form">
+            
+            <input type="text"  id="input-card-number"  placeholder="Número de tarjeta">
+            <br>
+            <input type="text" id="input-name-lastname"  placeholder="Nombre y apellido">
+            <br>
+            <input type="text" id="input-expiration-date"  placeholder="MM/AA">
+            <input type="text" id="input-cvv " placeholder="CVV">
+            <br>
+            <select name="" id="">
+              <option value="type-document">DNI</option>
+              <option value="tupe-document">C.E</option>
+            </select>
+            <button type="submit" id="form-btn">Pagar</button>
+          </form> 
+        </div>
+        <div class="pay-card">
+          <div class="credit-card">
+              <div class="chip-container"><img class="img-chip" src="/src/assets/chip.png" alt="/"></div>
+              <p class="card-credit-number">****  ****   ****  ****</p>
+              <div class="info-usuario"><p>NOMBRE Y APELLIDO</p>
+                <p>MM/AA</p>
+              </div>
+              
+              <div class="card-type"><img class="img-type-card" src="/src/assets/visa.png" alt="tipo de tarjeta">
+              </div>
+          </div>
+        </div>
         
       </div>
     </main>
