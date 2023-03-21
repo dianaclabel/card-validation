@@ -2,6 +2,8 @@
   display: flex;
   align-items: center;
   background-color: var(--color-primary);
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%2368904e' fill-opacity='0.15' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
   width: 80%;
   height: 15vh;
   border-radius: 10px;
@@ -28,20 +30,14 @@
   font-family: var(--font-primary);
   margin: 30px;
   font-size: 20px;
-  color: rgb(118 116 116);
+  color: var(--color-font-primary);
 }
-.pay-container {
-  width: 80%;
-  background-color: var(--color-primary);
-  margin: 0 auto;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-}
-
 .credit-card {
-  background-color: #ffffff;
-  padding: 20px;
+  background-image: url(./assets/fondo-1.jpg);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+  padding: 25px;
   border-radius: 20px;
   width: 400px;
   height: 250px;
@@ -55,18 +51,122 @@
   width: 100%;
 }
 .card-credit-number {
+  margin-top: 10px;
   font-size: 30px;
 }
 .info-usuario {
   display: flex;
   justify-content: space-between;
-  padding: 15px;
+  padding: 15px 15px 0px 4px;
+  font-family: var(--font-card);
+  font-size: 18px;
 }
 .card-type {
   width: 70px;
   margin-left: auto;
 }
-.card-form {
+/* estilos de contenerdor de pago */
+.pay-container {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%2368904e' fill-opacity='0.15' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+  width: 80%;
+  height: 55vh;
+  background-color: var(--color-primary);
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+}
+
+.pay-form {
+  /* padding-left: 30px; */
   width: 50%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-form {
+  padding-left: 70px;
+}
+.input {
+  border: 0;
+  border-bottom: 1px var(--color-primary-action) solid;
+  background-color: transparent;
+  margin-bottom: 20px;
+  width: 75%;
+  color: var(--color-font-primary);
+  font-size: 18px;
+  font-family: var(--font-primary);
+  padding: 20px 0 5px;
+  letter-spacing: 1px;
+  outline: none;
+}
+
+.input-expiration-date,
+.input-cvv,
+.type-document,
+.input-number-document {
+  width: 36%;
+  margin-right: 15px;
+}
+
+.btn-pagar {
+  margin: 10px 50px;
+}
+
+.pay-card {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1440px) {
+  .card-form {
+    padding-left: 0;
+    width: 70%;
+  }
+  .input {
+    font-size: 20px;
+    width: 95%;
+  }
+  .input-expiration-date,
+  .input-cvv,
+  .type-document,
+  .input-number-document {
+    width: 46%;
+  }
+
+  .credit-card {
+    width: 500px;
+    height: 300px;
+  }
+
+  .chip-container {
+    width: 80px;
+  }
+
+  .card-type {
+    width: 80px;
+    margin-left: auto;
+  }
+
+  .card-credit-number {
+    margin-top: 30px;
+  }
+  .info-usuario {
+    margin-top: 15px;
+  }
+
+  .btn-pagar {
+    margin: 20px auto;
+  }
+
+  .info-usuario {
+    font-size: 20px;
+  }
+
+  .info-media-pay {
+    font-size: 24px;
+  }
 }

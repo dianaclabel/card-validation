@@ -10,7 +10,9 @@
   --color-secondary: #b3b09e;
   --font-Secondary: "Lilita One", cursive;
   --font-primary: "Noto Sans", sans-serif;
-  --color-tertiary: ;
+  --font-card: "IBM Plex Mono", monospace;
+  --color-terciary: rgb(191, 190, 190);
+  --color-font-primary: rgb(86 81 81);
 }
 
 .navigator {
@@ -41,7 +43,7 @@
 }
 
 .search::placeholder {
-  color: rgb(191, 190, 190);
+  color: var(--color-terciary);
 }
 
 .icon-search {

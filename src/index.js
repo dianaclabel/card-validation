@@ -1,12 +1,10 @@
 import validator from "./validator.js";
 
-console.log(validator);
-
 // const cardForm = document.querySelector("#card-form");
 const cardNumberInput = document.querySelector("#input-card-number");
 // const formBtn = document.querySelector("#form-btn");
 
-cardNumberInput.addEventListener("change", () => {
+cardNumberInput.addEventListener("keyup", () => {
   const cardNumbersString = cardNumberInput.value;
   console.log(cardNumbersString);
   validator.isValid(cardNumbersString);
