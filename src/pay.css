@@ -71,7 +71,7 @@
   width: 80%;
   height: 55vh;
   background-color: var(--color-primary);
-  margin: 0 auto;
+  margin: 0 auto 40px;
   padding: 40px;
   display: flex;
 }
@@ -110,6 +110,20 @@
   margin-right: 15px;
 }
 
+.container-card-number {
+  position: relative;
+}
+.check-card {
+  width: 40px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  display: none;
+}
+
+.img-check-card {
+  width: 100%;
+}
 .btn-pagar {
   margin: 10px 50px;
 }

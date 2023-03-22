@@ -55,19 +55,23 @@
       <div class="pay-container">
         <div class="pay-form">
           <form id="card-form" class="card-form">
+            <div class="container-card-number">
+              <input type="text" class="input input-card-number"  name="card-number" id="input-card-number"  placeholder="Número de tarjeta" maxlength="16" required>
+              <div class="check-card" id="check-card">
+                <img  class="img-check-card" id="img-check-card" src="./assets/check.png" alt="check">
+              </div>
             
-            <input type="text" class="input input-card-number"  id="input-card-number"  placeholder="Número de tarjeta" required>
+            </div>
+            <input type="text" class="input input-name-lastname" name="card-name" id="input-name-lastname"  placeholder="Nombre y apellido" required>
             <br>
-            <input type="text" class="input input-name-lastname" id="input-name-lastname"  placeholder="Nombre y apellido" required>
+            <input type="text" class="input input-expiration-date" name="card-expiration-date" id="input-expiration-date"  placeholder="MM/AA" required maxlength="5">
+            <input type="text" class="input input-cvv" name="card-cvv" id="input-cvv" placeholder="CVV" required maxlength="4">
             <br>
-            <input type="text" class="input input-expiration-date" id="input-expiration-date"  placeholder="MM/AA" required>
-            <input type="text" class="input input-cvv" id="input-cvv" placeholder="CVV" required>
-            <br>
-            <select class="input type-document">
-              <option class="input" value="type-document">DNI</option>
-              <option class="input" value="tupe-document">C.E</option>
+            <select class="input type-document" name="type-document">
+              <option class="input" value="DNI">DNI</option>
+              <option class="input" value="C.E">C.E</option>
             </select>
-            <input type="text" class="input input-number-document" id="input-number" placeholder="Número" required>
+            <input type="text" class="input input-number-document" name="number" id="input-number" placeholder="Número" required maxlength="10">
             <button class="btn btn-pagar" type="submit" id="form-btn">Pagar</button>
           </form> 
         </div>
@@ -76,8 +80,8 @@
               <div class="chip-container"><img class="img-chip" src="./assets/chip.png" alt="/"></div>
               <p class="card-credit-number" id="card-credit-number">****  ****   ****  ****</p>
               <div class="info-usuario">
-                <p id="Name-lastname">NOMBRE Y APELLIDO</p>
-                <p>MM/AA</p>
+                <p id="name-lastname">NOMBRE Y APELLIDO</p>
+                <p id="expiration-date">MM/AA</p>
               </div>
               
               <div class="card-type"><img class="img-type-card" src="./assets/visa.png" alt="tipo de tarjeta">
@@ -87,7 +91,30 @@
         
       </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <ul class="list-footer list-logo-footer">
+          <li class="item-footer"><img class="logo-footer" src="./assets/logo.png" alt="logotipo"></li>
+          <li class="item-footer"><a class="link-footer" href="/">© 2023 El Botanico Perú | todos los derechos reservados</a></li>
+      </ul>
+      
+      <ul class="list-footer">
+          <li class="item-footer"> <a class="link-footer title-links" href="/">Servicio al cliente</a></li>
+          <li class="item-footer"> <a class="link-footer" href="/">Terminos y condiciones</a></li>
+          <li class="item-footer"><a class="link-footer" href="/">Políticas de privacidad</a></li>
+          <li class="item-footer"> <a class="link-footer" href="/">Preguntas frecuentes</a></li>
+          <li class="item-footer"> <a class="link-footer" href="/">Politicas de envio</a></li>
+      </ul>
+      <ul class="list-footer">
+          <li class="item-footer"><a class="title-links link-footer" href="/">Información de la tienda</a></li>
+          <li class="item-footer"> <img src="./assets/map.png" width="20px" alt="mapa ">
+              <a class="link-footer" href="/">Calle enrique Palacios 432</a></li>
+          <li class="item-footer"> <a class="link-footer info-footer" href="/">Surco</a> </li>
+          <li class="item-footer"> <a class="link-footer info-footer" href="/">Lima</a></li>
+          <li class="item-footer"> <a class="link-footer info-footer" href="/">Peru</a></li>
+          <li class="item-footer"> <img src="./assets/gmail.png" width="20px" alt="correo">
+              <a class="link-footer" href="/">elbotanicope@gmail.com</a></li>
+      </ul>
+  </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>

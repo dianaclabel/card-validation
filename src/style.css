@@ -170,3 +170,44 @@
   background-color: #76a358;
   transform: scale(1.2);
 }
+
+/* estilos de footer */
+.footer {
+  padding: 25px;
+  background-color: #394831;
+  display: flex;
+  justify-content: space-around;
+
+  font-size: 14px;
+}
+
+.list-logo-footer {
+  text-align: center;
+}
+
+.logo-footer {
+  width: 150px;
+}
+
+.list-footer {
+  list-style: none;
+}
+
+.item-footer {
+  list-style: none;
+  color: var(--color-terciary);
+  margin-bottom: 10px;
+}
+.title-links {
+  font-size: 18px;
+  font-weight: 800;
+}
+.link-footer {
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: var(--color-terciary);
+  font-family: var(--font-primary);
+}
+.info-footer {
+  padding-left: 25px;
+}
