@@ -7,6 +7,7 @@ const cardNumberInput = document.querySelector("#input-card-number");
 cardNumberInput.addEventListener("keyup", () => {
   const cardNumbersString = cardNumberInput.value;
   console.log(cardNumbersString);
+  validator.maskify(cardNumbersString);
   validator.isValid(cardNumbersString);
 
   // const arrString = cardNumbersString.split("");

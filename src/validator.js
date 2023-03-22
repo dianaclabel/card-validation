@@ -59,7 +59,30 @@ const validator = {
     console.log(isValid);
     return isValid;
   },
-  maskify: () => {},
+  maskify: (cardNumbersString) => {
+    let numbers = cardNumbersString;
+
+    if (numbers.length > 4) {
+      const numbersVisible = numbers.substring(numbers.length - 4);
+      console.log(numbersVisible);
+
+      const numbersToMaskify = numbers.substring(0, numbers.length - 4);
+      const numbersToMaskifyArr = numbersToMaskify.split("");
+      console.log(numbersToMaskifyArr);
+      const numbersMaskify = [];
+
+      for (let i = 0; i < numbersToMaskifyArr.length; i++) {
+        numbersMaskify.push("*");
+      }
+
+      const numberInvisible = numbersMaskify.join("");
+      console.log(numberInvisible);
+
+      numbers = numberInvisible + numbersVisible;
+    }
+    console.log(numbers);
+    return numbers;
+  },
 };
 
 export default validator;
