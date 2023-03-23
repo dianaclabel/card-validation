@@ -63,15 +63,17 @@
             
             </div>
             <input type="text" class="input input-name-lastname" name="card-name" id="input-name-lastname"  placeholder="Nombre y apellido" required>
-            <br>
-            <input type="text" class="input input-expiration-date" name="card-expiration-date" id="input-expiration-date"  placeholder="MM/AA" required maxlength="5">
-            <input type="text" class="input input-cvv" name="card-cvv" id="input-cvv" placeholder="CVV" required maxlength="4">
-            <br>
-            <select class="input type-document" name="type-document">
-              <option class="input" value="DNI">DNI</option>
-              <option class="input" value="C.E">C.E</option>
-            </select>
-            <input type="text" class="input input-number-document" name="number" id="input-number" placeholder="Número" required maxlength="10">
+            <div class="containers">
+              <input type="text" class="input input-expiration-date" name="card-expiration-date" id="input-expiration-date"  placeholder="MM/AA" required maxlength="5">
+              <input type="text" class="input input-cvv" name="card-cvv" id="input-cvv" placeholder="CVV" required maxlength="4">
+            </div>
+            <div class="containers">
+              <select class="input type-document" name="type-document">
+                <option class="input" value="DNI">DNI</option>
+                <option class="input" value="C.E">C.E</option>
+              </select>
+              <input type="text" class="input input-number-document" name="number" id="input-number" placeholder="Número" required maxlength="10">
+            </div>
             <button class="btn btn-pagar" type="submit" id="form-btn">Pagar</button>
           </form> 
         </div>
