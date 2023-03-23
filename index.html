@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>El botanico</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pay.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Lilita+One&family=Noto+Sans:wght@500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="navigator">
+      <div class="navigator-left">
+          <div class="container-logo">
+              <img class="logotipo" src="./assets/logo.png" alt="plantas y macetas">
+          </div>
+          <div class="navigator__search">
+              <input class="search" placeholder="buscar" type="text">
+              <span class="icon-search"> 
+                  <img class="img-search" src="./assets/search.png" alt="buscador">
+              </span>
+          </div>
+          
+         
+      </div>
+      <nav class="navigator-right"> 
+          <ul class="navigator-items">
+              <li class="nav-item"><a class="item" href="./home.html">Home </a>
+                  
+              </li>
+              <li class="nav-item"><a class="item" href="/">Tienda</a>
+                  </li>
+              <li class="nav-item"><a class="item" href="/">Nosotros </a>
+                  
+              </li>
+              <li class="nav-item"><a class="item" href="/">Contacto</a>
+                  </li>
+              <li class="nav-item item-perfil">
+                  <a href="/" class="item"> Perfil</a>
+              
+                  <img  class="icon-arrow-down" src="./assets/arrow-down.png" alt="arrow-down">
+              </li>
+              <li class="nav-item"><a href="/" class="item"><img src="./assets/cart.png" alt="carrito"></a></li>
+          </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="pay-media-container">
+        <div class="card-img-container">
+          <img class=" card-credit-img" src="./assets/card-credit.png" alt="/">
+        </div>
+        <p class="info-media-pay"> Pago con tarjeta de crédito</p>
+      </div>
+      <div class="pay-container">
+        <div class="pay-form">
+          <form id="card-form" class="card-form">
+            <div class="container-card-number">
+              <input type="text" class="input input-card-number"  name="card-number" id="input-card-number"  placeholder="Número de tarjeta" maxlength="16" required>
+              <div class="check-card" id="check-card">
+                <img  class="img-check-card" id="img-check-card" src="./assets/check.png" alt="check">
+              </div>
+            
+            </div>
+            <input type="text" class="input input-name-lastname" name="card-name" id="input-name-lastname"  placeholder="Nombre y apellido" required>
+            <br>
+            <input type="text" class="input input-expiration-date" name="card-expiration-date" id="input-expiration-date"  placeholder="MM/AA" required maxlength="5">
+            <input type="text" class="input input-cvv" name="card-cvv" id="input-cvv" placeholder="CVV" required maxlength="4">
+            <br>
+            <select class="input type-document" name="type-document">
+              <option class="input" value="DNI">DNI</option>
+              <option class="input" value="C.E">C.E</option>
+            </select>
+            <input type="text" class="input input-number-document" name="number" id="input-number" placeholder="Número" required maxlength="10">
+            <button class="btn btn-pagar" type="submit" id="form-btn">Pagar</button>
+          </form> 
+        </div>
+        <div class="pay-card">
+          <div class="credit-card">
+              <div class="chip-container"><img class="img-chip" src="./assets/chip.png" alt="/"></div>
+              <p class="card-credit-number" id="card-credit-number">****  ****   ****  ****</p>
+              <div class="info-usuario">
+                <p id="name-lastname">NOMBRE Y APELLIDO</p>
+                <p id="expiration-date">MM/AA</p>
+              </div>
+              
+              <div class="card-type"><img class="img-type-card" src="./assets/visa.png" alt="tipo de tarjeta">
+              </div>
+          </div>
+        </div>
+        
+      </div>
+    </main>
+    <footer class="footer">
+      <ul class="list-footer list-logo-footer">
+          <li class="item-footer"><img class="logo-footer" src="./assets/logo.png" alt="logotipo"></li>
+          <li class="item-footer"><a class="link-footer" href="/">© 2023 El Botanico Perú | todos los derechos reservados</a></li>
+      </ul>
+      
+      <ul class="list-footer">
+          <li class="item-footer"> <a class="link-footer title-links" href="/">Servicio al cliente</a></li>
+          <li class="item-footer"> <a class="link-footer" href="/">Terminos y condiciones</a></li>
+          <li class="item-footer"><a class="link-footer" href="/">Políticas de privacidad</a></li>
+          <li class="item-footer"> <a class="link-footer" href="/">Preguntas frecuentes</a></li>
+          <li class="item-footer"> <a class="link-footer" href="/">Politicas de envio</a></li>
+      </ul>
+      <ul class="list-footer">
+          <li class="item-footer"><a class="title-links link-footer" href="/">Información de la tienda</a></li>
+          <li class="item-footer"> <img src="./assets/map.png" width="20px" alt="mapa ">
+              <a class="link-footer" href="/">Calle enrique Palacios 432</a></li>
+          <li class="item-footer"> <a class="link-footer info-footer" href="/">Surco</a> </li>
+          <li class="item-footer"> <a class="link-footer info-footer" href="/">Lima</a></li>
+          <li class="item-footer"> <a class="link-footer info-footer" href="/">Peru</a></li>
+          <li class="item-footer"> <img src="./assets/gmail.png" width="20px" alt="correo">
+              <a class="link-footer" href="/">elbotanicope@gmail.com</a></li>
+      </ul>
+  </footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
