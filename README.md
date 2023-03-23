@@ -1,10 +1,12 @@
-#El botánico
+# El botánico
 
 El botánico es una interfaz en donde puedes realizar compras de plantas, herramientas de jardinería y macetas. Lo más importante es que podrás realizar tus pagos sin preocuparte de colocar tu número de tarjeta erróneo, ya que hemos creado un validador de número de tarjeta con la metodología de Luhn para que eso no suceda y puedas realizar tus compras de manera segura.
-
+![](./src/assets/section-home.png)
 Nuestros principales usuarios son aquellas personas interesadas en el mundo de la jardinería y que desean realizar sus compras con tarjetas de crédito de manera segura y con una interfaz muy amigable
+![](./src/assets/section-pay.png)
 
-#Uso
+# Uso
+
 Para utilizar la aplicación, sigue los siguientes pasos:
 
 - Navega a la página de inicio y selecciona tienda.
@@ -37,9 +39,12 @@ El botanico es un proyecto que tiene como fin de validar una tarjeta credito ant
   - Crear prototipos de alta fidelidad que incluyan interacciones
   - Seguir los principios básicos de diseño visual
 
-![](./src/assets/dise%C3%B1o-figma.png)
-#Licencia
+![](./src/assets/diseno-figma.png)
+
+# Licencia
+
 Este proyecto está bajo la licencia MIT.
 
-#Soporte
+# Soporte
+
 Si necesitas soporte para esta aplicación, puedes contactarnos a través de información de la tienda que se encuentra en nuestra página. También puedes buscar soluciones a problemas comunes en nuestra sección de preguntas frecuentes.
