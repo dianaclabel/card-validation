@@ -12,7 +12,6 @@ const validator = {
       //convertir cada elemento a  tipo numero
       arrString.forEach((element) => {
         const number = parseInt(element);
-        // console.log(number);
         cardNumbers.push(number);
       });
       cardNumbers.reverse();
@@ -46,9 +45,6 @@ const validator = {
         // console.log(resultVerification);
       }
     }
-
-    // console.log(totalPar);
-    // console.log(totalImpar);
     // console.log(total);
 
     if (total % 10 === 0) {
@@ -57,7 +53,6 @@ const validator = {
       isValid = false;
     }
 
-    console.log(isValid);
     return isValid;
   },
   maskify: (cardNumbersString) => {
@@ -83,7 +78,6 @@ const validator = {
 
       numbers = numberInvisible + numbersVisible;
     }
-    console.log(numbers);
     return numbers;
   },
 };

@@ -111,11 +111,9 @@
 .imagen-home {
   width: 100%;
   opacity: 0.8;
-  /* background-size: cover; */
 }
 
 .main-information {
-  /* background-color: #ecf2e6; */
   width: 35vw;
   padding: 20px;
   text-align: center;
