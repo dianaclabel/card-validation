@@ -51,7 +51,12 @@ cardForm.addEventListener("submit", (event) => {
   //formData es una instancia para captar los datos
   const datos = new FormData(cardForm);
 
-  const nombreUsuario = datos.get("card-name");
-
-  alert(nombreUsuario + ", gracias por su compra");
+  const cardNumber = datos.get("card-number");
+  if (validator.isValid(cardNumber)) {
+    const nombreUsuario = datos.get("card-name");
+    alert(nombreUsuario + ", gracias por su compra");
+  } else {
+    alert("Verifique los números de su tarjeta");
+    cardNumberInput.focus();
+  }
 });
